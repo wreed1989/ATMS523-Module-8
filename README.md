@@ -1,4 +1,4 @@
-# Solar-Wind Drivers of Geomagnetic Storms (1999–2025):  
+# Solar-Wind Drivers of Geomagnetic Storms (1999–2020):  
 ## Identifying Multi-Parameter Predictors of Global Geomagnetic Activity
 
 ---
