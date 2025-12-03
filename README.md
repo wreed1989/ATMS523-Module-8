@@ -15,20 +15,20 @@ Motivated by these operational challenges, this project evaluates **how solar-wi
 - Quantify which parameters exert the strongest influence on storm onset  
 - Compare multi-parameter behavior with traditional single-variable thresholds  
 
-The project implements an **end-to-end workflow** linking real solar-wind observations, storm classifications (Ap > 30 / 50 / 100), probability modeling, and interpretable machine-learning decision rules—mirroring the type of diagnostic insight relevant to operational space-weather assessments.
+The project implements an **end-to-end workflow** linking real solar-wind observations, storm classifications (Ap > 30 / 50 / 100), probability modeling, and interpretable machine-learning decision rules—providing the type of diagnostic insight relevant to operational space-weather assessments.
 
 ---
 
 ## Approach
 
-To investigate how different aspects of the solar wind influence geomagnetic activity, an analysis pipeline was developed entirely in Python using `pandas`, `numpy`, `scikit-learn`, and `matplotlib`. The workflow consists of the following stages:
+To investigate how different aspects of the solar wind influence geomagnetic activity, a Jupyter Notebook was developed entirely in Python using standard packages like `pandas`, `numpy`, `scikit-learn`, and `matplotlib`. The workflow consists of the following stages:
 
 ### **Dataset Selection and Preparation**
 
 The project uses **ACE Level-2 Solar-Wind Data** and standard **SWPC-processed solar-wind parameters**, including:
 
-- IMF Bz (GSM)
-- IMF magnitude Bt
+- IMF Bz in GSM Coordinates (nT)
+- IMF magnitude Bt (nT)
 - Solar-wind speed (km/s)
 - Proton density (cm⁻³)
 
@@ -63,7 +63,7 @@ These steps revealed that geomagnetic storms typically arise from combinations o
 
 ### **Machine-Learning Modeling**
 
-To evaluate nonlinear interactions and multi-parameter predictive skill, the workflow incorporated:
+To evaluate nonlinear interactions and multi-parameter predictive skill, the project incorporated:
 
 - **Decision tree classifiers** for interpretable threshold extraction  
 - **Random forests** for capturing nonlinear interactions  
